@@ -1,0 +1,16 @@
+.tasks {
+	flex-grow: 1;
+}
+
+.tasks__scroll {
+	display: flex;
+	overflow: auto;
+}
+
+.tasks__list {
+	background-color: #fff; 
+	background-image: linear-gradient(var(--secondary-color) .1em, transparent .1em);
+	background-size: 100% 37px;
+	margin: -1px var(--spaccing-3) 0 var(--spaccing-3);
+	flex-grow: 1;
+}

@@ -1,0 +1,42 @@
+.header {
+	background-color: #fff;
+}
+
+.header__hamburguer {
+	display: inline-block;
+	padding: var(--spaccing-2);
+	border-right: 1px solid var(--secondary-color);
+}
+
+.header__menu a {
+	padding: 0 var(--spaccing-2);
+	font-size: var(--normal-font);
+}
+
+.header__menu button {
+	padding: 4px;
+	margin-left: var(--spaccing-2);
+}
+
+.header__title {
+	justify-content: center;
+	border-top: 1px solid var(--secondary-color);
+}
+
+.header__title-avatar {
+	margin-right: var(--spaccing-2);
+}
+
+@media only screen and (min-width: 768px) {
+	.header__search-input {
+		width: 200px;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.header__search-input {
+		width: 500px;
+	}
+}
+
+

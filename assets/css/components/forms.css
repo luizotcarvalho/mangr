@@ -1,0 +1,18 @@
+.input__large {
+	font-size: 20px;
+}
+
+.form-feedback__control {
+	position: relative;
+}
+
+.form-feedback__control input {
+	padding-left: var(--spaccing-4);	
+}
+
+.form-feedback__icon {
+	position: absolute;
+	left: var(--spaccing-1);
+    top: 50%;
+    transform: translateY(-50%);
+}

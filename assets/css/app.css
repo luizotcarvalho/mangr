@@ -1,0 +1,27 @@
+/*
+*
+* Utilizar imports não é uma boa prática, porém, dada as limitações do desafio
+* é a melhor forma de componentizer o css.
+*
+*/
+
+@import "core/reset.css";
+@import "core/variables.css";
+@import "core/global.css";
+@import "core/typo.css";
+
+@import "helpers/properties.css";
+@import "helpers/flex.css";
+@import "helpers/responsive.css";
+@import "helpers/animations.css";
+
+@import "components/icons.css";
+@import "components/buttons.css";
+@import "components/forms.css";
+@import "components/box.css";
+@import "components/header.css";
+@import "components/tasks.css";
+@import "components/task.css";
+@import "components/task-details.css";
+
+@import "containers/my-tasks.css";

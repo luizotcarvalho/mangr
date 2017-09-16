@@ -1,0 +1,22 @@
+:root {
+	--primary-color: #00b2f6;
+	--secondary-color: #e4e9eb;
+	--bg-color: #f6f8f9;
+	--link-color: #72808d;
+	--link-active-color: #333;
+	--hover-color: #edf8ff;
+
+	--small-font: 12px;
+	--normal-font: 14px;
+
+	--border-radius: 4px;
+
+	--spaccing-1: 7px;
+	--spaccing-2: 14px;
+	--spaccing-3: 28px;
+	--spaccing-4: 36px;
+
+	--phone-width: 480px;
+	--tablet-width: 768px;
+	--desktop-width: 1200px;
+}

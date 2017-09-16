@@ -1,0 +1,29 @@
+.box {
+	background-color: #fff;
+	overflow: hidden;
+	border-radius: var(--border-radius);
+}
+
+.box__header,
+.box__body,
+.box__footer {
+	padding: var(--spaccing-1) var(--spaccing-3);
+}
+
+.box__header {
+	border-bottom: 1px solid var(--secondary-color);
+}
+
+.box__footer {
+	border-top: 1px solid var(--secondary-color);
+	background-color: var(--bg-color);
+}
+
+@media only screen and (max-width: 420px) {
+	.box__header,
+	.box__body,
+	.box__footer {
+		padding-left: var(--spaccing-2);
+		padding-right: var(--spaccing-2);
+	}
+}

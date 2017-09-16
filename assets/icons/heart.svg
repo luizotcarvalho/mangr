@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="14px" viewBox="0 0 16 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41 (35326) - http://www.bohemiancoding.com/sketch -->
+    <title>heart</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M7.71023555,2.05452857 L6.83048779,1.17478081 C5.26597234,-0.389734648 2.73113132,-0.39191575 1.16903415,1.17018142 C-0.389884463,2.72910003 -0.391003799,5.26699772 1.17363354,6.83163506 L7.53299518,13.1909967 L7.54019161,13.1838003 L7.71743198,13.3610406 L14.0767936,7.001679 C15.6413091,5.43716355 15.6434902,2.90232253 14.081393,1.34022536 C12.5224744,-0.218693251 9.98457671,-0.219812588 8.41993937,1.34482475 L7.71023555,2.05452857 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="15.2515744" height="13.3610406" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <use id="heart" stroke="#D2D7DB" mask="url(#mask-2)" stroke-width="2" xlink:href="#path-1"></use>
+    </g>
+</svg>

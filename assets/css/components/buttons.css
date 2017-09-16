@@ -1,0 +1,38 @@
+.button {
+	cursor: pointer;
+	border: none;
+	padding: var(--spaccing-1);
+	background-color: transparent;
+	border-radius: var(--border-radius);
+	font-weight: bold;
+	font-size: var(--normal-font);
+}
+
+.button--default {
+	border: 1px solid var(--secondary-color);
+	color: var(--secondary-color);
+}
+
+.button--primary {
+	border: 1px solid var(--primary-color);
+	color: var(--primary-color);
+}
+
+.button--primary:hover {
+	background-color: var(--primary-color);
+	color: #fff;
+}
+
+.button--circle {
+	border-radius: 50%;
+}
+
+.button--dashed {
+	border-width: 2px;
+	border-style: dashed;
+}
+
+.button--gradient {
+	background: -webkit-linear-gradient(top left, #f9747d, #f8b420);
+	background: linear-gradient(top left, #f9747d, #f8b420);
+}

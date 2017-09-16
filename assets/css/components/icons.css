@@ -1,0 +1,67 @@
+[class^='icon'],
+[class*=' icon'] {
+	height: 1em;
+ 	width: 1em;
+ 	font-size: 16px;
+ 	display: flex;
+ 	background-repeat: no-repeat;
+ 	background-position: center;
+}
+
+.icon__hamburguer {
+	background-image: url("../../icons/hamburguer.svg");
+}
+
+.icon__add {
+	background-image: url("../../icons/add.svg");
+}
+
+.icon__search {
+	background-image: url("../../icons/search.svg");
+}
+
+.icon__caret {
+	margin: 0 var(--spaccing-1);
+	background-image: url("../../icons/caret.svg");
+}
+
+.icon__caret--right {
+	transform: rotate(-90deg);
+}
+
+.icon__config {
+	background-image: url("../../icons/config.svg");
+}
+
+.icon__check {
+	font-size: 22px;
+	background-image: url("../../icons/check.svg");
+}
+
+.icon__calendar {
+	background-image: url("../../icons/calendar.svg");
+}
+
+.icon__heart {
+	background-image: url("../../icons/heart.svg");
+}
+
+.icon__branch {
+	background-image: url("../../icons/branch.svg");
+}
+
+.icon__attachment {
+	background-image: url("../../icons/attachment.svg");
+}
+
+.icon__more {
+	background-image: url("../../icons/more.svg");
+}
+
+.icon__close {
+	background-image: url("../../icons/close.svg");
+}
+
+.icon__circle {
+	background-image: url("../../icons/circle.svg");
+}

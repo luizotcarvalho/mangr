@@ -1,0 +1,18 @@
+.task-item {
+	display: block;
+	padding: 0 var(--spaccing-3);
+	margin: 1px calc(-1*var(--spaccing-3)) 0 calc(-1*var(--spaccing-3));
+}
+
+.task-item:hover,
+.task-item.active {
+	background-color: var(--hover-color);	
+}
+
+.task-item__content {
+	padding: var(--spaccing-1) 0;
+}
+
+.task-item__title {
+	margin-left: var(--spaccing-2);
+}

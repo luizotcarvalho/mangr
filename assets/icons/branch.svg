@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="15px" viewBox="0 0 15 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41 (35326) - http://www.bohemiancoding.com/sketch -->
+    <title>branch</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M9.17070571,12.5 L2.50968346,12.5 C1.12480007,12.5 0,11.3764652 0,9.9914698 L0,0 L1,0 L1,4 L9.04147922,4 C9.27951827,2.58114333 10.5135019,1.5 12,1.5 C13.6568542,1.5 15,2.84314575 15,4.5 C15,6.15685425 13.6568542,7.5 12,7.5 C10.5135019,7.5 9.27951827,6.41885667 9.04147922,5 L1,5 L1,9.9914698 C1,10.8239283 1.67683303,11.5 2.50968346,11.5 L9,11.5 C9,9.84314575 10.3431458,8.5 12,8.5 C13.6568542,8.5 15,9.84314575 15,11.5 C15,13.1568542 13.6568542,14.5 12,14.5 C10.6937812,14.5 9.58254212,13.6651924 9.17070571,12.5 Z M12,6.5 C10.8954305,6.5 10,5.6045695 10,4.5 C10,3.3954305 10.8954305,2.5 12,2.5 C13.1045695,2.5 14,3.3954305 14,4.5 C14,5.6045695 13.1045695,6.5 12,6.5 Z M12,13.5 C10.8954305,13.5 10,12.6045695 10,11.5 C10,10.3954305 10.8954305,9.5 12,9.5 C13.1045695,9.5 14,10.3954305 14,11.5 C14,12.6045695 13.1045695,13.5 12,13.5 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="15" height="14.5" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <use id="branch" stroke="#D2D7DB" mask="url(#mask-2)" stroke-width="2" xlink:href="#path-1"></use>
+    </g>
+</svg>
