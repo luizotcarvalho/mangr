@@ -3,50 +3,60 @@
 // Recebe uma função callback para salvar a task
 
 function TaskDetails(save) {
-	this.save = save;
-	this.className = 'task-details';
-	this.visibleModifier = '__visible'
-
-	this.container = document.getElementById('task-details');
-	this.closeButton = document.getElementById('close-button');
-	this.titleInput = document.getElementById('title-input');
-	this.descriptionInput = document.getElementById('description-input');
-
-	this.bind();
+	this.init(save);
 }
 
-TaskDetails.prototype.bind = function() {
-	this.closeButton.addEventListener('click', this.close.bind(this));
-	this.titleInput.addEventListener('keyup', this.updateTitle.bind(this));
-	this.descriptionInput.addEventListener('keyup', this.updateDescription.bind(this));
-};
+TaskDetails.prototype = function() {
+	var task = undefined,
+		save = undefined,
+		container = document.getElementById('task-details'),
+		closeButton = document.getElementById('close-button'),
+		titleInput = document.getElementById('title-input'),
+		descriptionInput = document.getElementById('description-input'),
+		className = 'task-details',
+		visibleModifier = '__visible',
 
-TaskDetails.prototype.set = function(task) {
-	this.task = task;
-	this.open();
-	this.render();
-}
+	bind = function() {
+		closeButton.addEventListener('click', close);
+		titleInput.addEventListener('keyup', updateTitle);
+		descriptionInput.addEventListener('keyup', updateDescription);
+	},
 
-TaskDetails.prototype.updateTitle = function(event) {
-	this.task.data.title = event.target.value;
-	this.task.render(true);
-	this.save();
-};
+	updateTitle = function(event) {
+		task.data.title = event.target.value;
+		task.render(true);
+		save();
+	},
 
-TaskDetails.prototype.updateDescription = function(event) {
-	this.task.data.description = event.target.value;
-	this.save();
-};
+	updateDescription = function(event) {
+		task.data.description = event.target.value;
+		task.render(true);
+		save();
+	},
 
-TaskDetails.prototype.render = function() {
-	this.titleInput.value = this.task.data.title;
-	this.descriptionInput.value = this.task.data.description;
-};
+	render = function() {
+		titleInput.value = task.data.title;
+		descriptionInput.value = task.data.description;
+	},
 
-TaskDetails.prototype.open = function(task) {
-	this.container.className = this.container.className + ' ' + this.className + this.visibleModifier;
-};
+	open = function() {
+		var visibleClass = className + visibleModifier;
+		container.className = container.className + ' ' + visibleClass;
+	},
 
-TaskDetails.prototype.close = function() {
-	this.container.className = this.className;
-};
+	close = function() {
+		container.className = className;
+	};
+
+	return {
+		init: function(_save) {
+			save = _save;
+			bind();
+		},
+		set: function(_task) {
+			task = _task;
+			open();
+			render();
+		}
+	}
+}();
