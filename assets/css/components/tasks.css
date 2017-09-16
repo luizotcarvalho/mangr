@@ -5,6 +5,7 @@
 .tasks__scroll {
 	display: flex;
 	overflow: auto;
+    align-items: flex-start;
 }
 
 .tasks__list {

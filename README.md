@@ -1,4 +1,4 @@
-Desafio de front-end Quero.
+Mngr. Desafio de front-end Quero.
 
 Aplicação feita a partir do layout enviado por email sem auxilio de nenhum framework ou ferramenta externa.
 
