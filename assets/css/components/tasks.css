@@ -15,3 +15,9 @@
 	margin: -1px var(--spaccing-3) 0 var(--spaccing-3);
 	flex-grow: 1;
 }
+
+.tasks__list-empty {
+	color: var(--link-color);
+	text-align: center;
+	padding: var(--spaccing-2) 0;
+}

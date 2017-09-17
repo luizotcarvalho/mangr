@@ -13,6 +13,7 @@ TaskDetails.prototype = function() {
 		closeButton = document.getElementById('close-button'),
 		titleInput = document.getElementById('title-input'),
 		descriptionInput = document.getElementById('description-input'),
+		commentInput = document.getElementById('comment-input'),
 		className = 'task-details',
 		visibleModifier = '__visible',
 
@@ -20,6 +21,7 @@ TaskDetails.prototype = function() {
 		closeButton.addEventListener('click', close);
 		titleInput.addEventListener('keyup', updateTitle);
 		descriptionInput.addEventListener('keyup', updateDescription);
+		commentInput.addEventListener('keyup', updateComment);
 	},
 
 	updateTitle = function(event) {
@@ -34,14 +36,22 @@ TaskDetails.prototype = function() {
 		save();
 	},
 
+	updateComment = function(event) {
+		task.data.comment = event.target.value;
+		task.render(true);
+		save();
+	},
+
 	render = function() {
 		titleInput.value = task.data.title;
 		descriptionInput.value = task.data.description;
+		commentInput.value = task.data.comment;
 	},
 
 	open = function() {
 		var visibleClass = className + visibleModifier;
 		container.className = container.className + ' ' + visibleClass;
+		titleInput.focus();
 	},
 
 	close = function() {

@@ -7,7 +7,8 @@ function Task(task) {
 	this.data = {
 		id: task.id || + new Date(),
 		title: task.title || '',
-		description: task.description || ''
+		description: task.description || '',
+		comment: task.comment || ''
 	};
 	this.taskTemplate = null;
 	this.render();

@@ -51,8 +51,15 @@
 			</div>
 
 			<div class="tasks__scroll">
-				<ul id="tasks" class="tasks__list"></ul>
+				<ul id="tasks" class="tasks__list">
+					<!-- CASO VAZIO -->
+					<li id="empty-case" class="tasks__list-empty">
+						<strong>No tasks added yet.</strong>
+					</li>
+				</ul>
 
+
+				<!-- TASK -->
 				<template id="task-template">
 					<a href="javascript:void(0)" class="task-item">
 						<div class="task-item__content flex-center space-between">
@@ -78,15 +85,15 @@
 					</a>
 
 					<div class="task-details__header__actions flex-center">
-						<button class="button button--default button--circle button--dashed"><i class="icon__calendar"></i></button>
+						<button title="Schedule" class="button button--default button--circle button--dashed"><i class="icon__calendar"></i></button>
 						<a href="" class="task-details__header__due-date" title="Due Date">Due Date</a>
-						<button class="button button--default button--circle hide-tablet"><i class="icon__heart"></i></button>
-						<button class="button button--default button--circle hide-tablet"><i class="icon__branch"></i></button>
-						<button class="button button--default button--circle hide-tablet"><i class="icon__attachment"></i></button>
-						<button class="button button--default button--circle"><i class="icon__more"></i></button>
+						<button title="Favorite" class="button button--default button--circle hide-tablet"><i class="icon__heart"></i></button>
+						<button title="Clone" class="button button--default button--circle hide-tablet"><i class="icon__branch"></i></button>
+						<button title="Attachment" class="button button--default button--circle hide-tablet"><i class="icon__attachment"></i></button>
+						<button title="More" class="button button--default button--circle"><i class="icon__more"></i></button>
 					</div>
 
-					<button id="close-button" class="button"><i class="icon__close"></i></button>
+					<button id="close-button" title="Close" class="button"><i class="icon__close"></i></button>
 				</div>
 
 				<div class="task-details__body box__body">
@@ -103,7 +110,7 @@
 
 				<div class="task-details__footer box__footer">
 					<img class="avatar avatar--32" src="assets/imgs/user.jpg" alt="Roger Garcia">
-					<textarea name="comment" rows="6" placeholder="Write a comment"></textarea>
+					<textarea id="comment-input" name="comment" rows="6" placeholder="Write a comment"></textarea>
 				</div>
 			</div>
 			<div class="task-details__overlay"></div>			

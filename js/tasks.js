@@ -22,8 +22,12 @@ Tasks.prototype = function() {
 	load = function() {
 	  	var _tasks = storage.get(storageKey) || tasks;
 
-	  	for (var i = 0; i < _tasks.length; i++) {
-	  		add(_tasks[i].data);
+	  	if(_tasks.length) {
+	  		hideEmptyState();
+
+		  	for (var i = 0; i < _tasks.length; i++) {
+		  		add(_tasks[i].data);
+		  	}
 	  	}
 	},
 
@@ -32,6 +36,10 @@ Tasks.prototype = function() {
 	},
 
 	create = function() {
+		if(!tasks.length) {
+	  		hideEmptyState();
+	  	}
+
 		add();
 	},
 
@@ -70,6 +78,11 @@ Tasks.prototype = function() {
 			});	
 			details.set(task);
 		}
+	},
+
+	hideEmptyState = function() {
+		var emptyState = document.getElementById('empty-case');
+		emptyState.style.display = 'none';
 	};
 
 	return {
