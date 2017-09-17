@@ -3,6 +3,7 @@ Mngr. Desafio de front-end Quero.
 Aplicação feita a partir do layout enviado por email sem auxilio de nenhum framework ou ferramenta externa. 
 - Utiliza o Local Storage para faze persistência de dados;
 - Se adapta a qualquer tamanho de tela;
+- Utiliza Service workers para funcionar offline;
 
 # Arquitetura
 
