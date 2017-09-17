@@ -53,13 +53,13 @@ self.addEventListener('install', function(event) {
   )
 });
 
-self.addEventListener('activate',  event => {
+self.addEventListener('activate', function(event) {
   event.waitUntil(self.clients.claim());
 });
 
-self.addEventListener('fetch', event => {
+self.addEventListener('fetch', function(event) {
   event.respondWith(
-    caches.match(event.request, {ignoreSearch:true}).then(response => {
+    caches.match(event.request, {ignoreSearch:true}).then(function(response) {
       return response || fetch(event.request);
     })
   );
