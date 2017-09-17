@@ -9,20 +9,20 @@
 }
 
 .icon__hamburguer {
-	background-image: url("../../icons/hamburguer.svg");
+	background-image: url("/mngr/assets/icons/hamburguer.svg");
 }
 
 .icon__add {
-	background-image: url("../../icons/add.svg");
+	background-image: url("/mngr/assets/icons/add.svg");
 }
 
 .icon__search {
-	background-image: url("../../icons/search.svg");
+	background-image: url("/mngr/assets/icons/search.svg");
 }
 
 .icon__caret {
 	margin: 0 var(--spaccing-1);
-	background-image: url("../../icons/caret.svg");
+	background-image: url("/mngr/assets/icons/caret.svg");
 }
 
 .icon__caret--right {
@@ -30,38 +30,38 @@
 }
 
 .icon__config {
-	background-image: url("../../icons/config.svg");
+	background-image: url("/mngr/assets/icons/config.svg");
 }
 
 .icon__check {
 	font-size: 22px;
-	background-image: url("../../icons/check.svg");
+	background-image: url("/mngr/assets/icons/check.svg");
 }
 
 .icon__calendar {
-	background-image: url("../../icons/calendar.svg");
+	background-image: url("/mngr/assets/icons/calendar.svg");
 }
 
 .icon__heart {
-	background-image: url("../../icons/heart.svg");
+	background-image: url("/mngr/assets/icons/heart.svg");
 }
 
 .icon__branch {
-	background-image: url("../../icons/branch.svg");
+	background-image: url("/mngr/assets/icons/branch.svg");
 }
 
 .icon__attachment {
-	background-image: url("../../icons/attachment.svg");
+	background-image: url("/mngr/assets/icons/attachment.svg");
 }
 
 .icon__more {
-	background-image: url("../../icons/more.svg");
+	background-image: url("/mngr/assets/icons/more.svg");
 }
 
 .icon__close {
-	background-image: url("../../icons/close.svg");
+	background-image: url("/mngr/assets/icons/close.svg");
 }
 
 .icon__circle {
-	background-image: url("../../icons/circle.svg");
+	background-image: url("/mngr/assets/icons/circle.svg");
 }
