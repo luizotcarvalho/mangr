@@ -10,6 +10,7 @@ TaskDetails.prototype = function() {
 	var task = undefined,
 		save = undefined,
 		container = document.getElementById('task-details'),
+		overlay = document.getElementById('task-details__overlay'),
 		closeButton = document.getElementById('close-button'),
 		titleInput = document.getElementById('title-input'),
 		descriptionInput = document.getElementById('description-input'),
@@ -22,6 +23,7 @@ TaskDetails.prototype = function() {
 		titleInput.addEventListener('keyup', updateTitle);
 		descriptionInput.addEventListener('keyup', updateDescription);
 		commentInput.addEventListener('keyup', updateComment);
+		overlay.addEventListener('click', close);
 	},
 
 	updateTitle = function(event) {
