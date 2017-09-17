@@ -14,6 +14,3 @@ O código JS da aplicação foi desenvolvido com base nas seguintes premissas:
 
 ## CSS
 O código CSS foi escrito usando a metodologia [BEM](http://getbem.com/introduction/). Resultando em componentes com escopo de estilo isolado e organizados de entendimento e manutenção fácil e baixo risco de gerar bugs na aplicação.
-
-
-#colocar link nos termos
